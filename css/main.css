@@ -1,0 +1,171 @@
+html {
+    font-size: 62.5%;
+}
+body {
+    margin: 0;
+    padding: 0;
+    font-size: 1.6rem;
+    font-family: 'Source Sans Pro', sans-serif;
+}
+li {
+    list-style: none;
+}
+a {
+    text-decoration: none;
+    color: black;
+}
+.Home-container {
+    width: 100vw;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+header {
+    width: 100%;
+    height: 60px;
+}
+header nav {
+    display: flex;
+    justify-content: flex-end;
+}
+header nav .nav-right-section {
+    width: 250px;
+    height: auto;
+    display: flex;
+    list-style: none;
+    justify-content: center;
+    align-items: center;
+}
+nav .nav-right-section a {
+    margin-right: 20px;
+    color: #000000;
+}
+nav .nav-right-section .menu-icon {
+    background-image: url("https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSf2NV1uVH8comWas0czoaD3m-P8SvFnXA3lzOHVvdr1-8cqLIrK7yUQV1rlq9ThyH4104&usqp=CAU");
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: contain;
+    width: 25px;
+    height: 25px;
+    cursor: pointer;
+}
+nav .nav-right-section img {
+    border-radius: 50%;
+    margin-left: 20px;
+    width: 35px;
+    height: 35px;
+}
+main {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    align-content: center;
+    gap: 4rem;
+}
+.logo-container {
+    display: flex;
+    width: 45rem;
+    height: 15rem;
+}
+.main--logo {
+    width: 100%;
+}
+.main--search-bar {
+    display: flex;
+    width: 45rem;
+    height: 2.8rem;
+    position: relative;
+    align-items: center;
+}
+.input-search {
+    width: 100%;
+    height: 100%;
+    border: solid .1rem black;
+    border-radius: 1.6rem;
+    position: relative;
+    padding-inline-start: 4.4rem;
+    padding-inline-end: 4.4rem;
+    font-size: 1.8rem;
+}
+.search-icon {
+    z-index: 2;
+    left: 0;
+    padding-left: 1rem;
+    position: absolute;
+}
+.mic-icon {
+    z-index: 3;
+    right: 0;
+    position: absolute;
+    padding-right: 1rem;
+}
+.material-symbols-outlined {
+    cursor: pointer;
+  font-variation-settings:
+  'FILL' 0,
+  'wght' 400,
+  'GRAD' 0,
+  'opsz' 48
+}
+.button-opcions {
+    display: flex;
+    align-items: center;
+    gap: 2.6rem;
+}
+.primary-button {
+    cursor: pointer;
+    width: 13rem;
+    height: 3.6rem;
+}
+footer {
+    display: flex;
+    background-color: rgb(226, 225, 225);
+    width: 100%;
+    height: auto;
+    justify-content: space-between;
+}
+.footer--right ul{
+    display: flex;
+    flex-direction: row;
+    margin-left: 1.6rem;
+    gap: 1.6rem;
+    padding: 0;
+}
+.footer--left ul{
+    display: flex;
+    flex-direction: row;
+    margin-right: 1.6rem;
+    gap: 1.6rem;
+    padding: 0;
+}
+@media screen and (max-width: 645px) {
+    .Home-container{
+        width: 100%;
+        align-content: center;
+    }
+    .logo-container {
+        display: flex;
+        width: 90%;
+        height: 90%;
+    }
+    .main--search-bar {
+        width: 90%;
+    }
+    footer {
+        justify-content: center;
+    }
+    .footer--right ul{
+        flex-direction: column;
+        gap: .6rem;
+    }
+    .footer--left ul{
+        flex-direction: column;
+        gap: .6rem;
+    }
+}
+@media screen and (max-width: 300px) {
+    .button-opcions {
+        flex-direction: column;
+    }
+}
